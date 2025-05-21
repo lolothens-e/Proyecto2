@@ -1,0 +1,230 @@
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karma&family=PT+Sans+Caption&family=Mulish:wght@300;400;600&display=swap');
+
+/* Base reset and universal style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', 'PT Sans Caption', 'Karma', sans-serif;
+  background-color: #F1F1F1;
+  color: #000F06;
+  line-height: 1.6;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Typography hierarchy */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  background-color: #0E6B6C;
+  color: #F1F1F1;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-left: 5px solid #FFCA99;
+  border-radius: 6px 6px 6px 6px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #0E6B6C;
+  margin-bottom: 5px;
+}
+
+/* Header section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #0E6B6C;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FFCA99;
+}
+
+/* Contact info and links */
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #0E6B6C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section wrapper */
+section {
+  background-color: #FFFFFF;
+  padding: 20px;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+/* Experience list */
+ol {
+  padding-left: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Skills table */
+.skills table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.skills th, .skills td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  background-color: #fafafa;
+  text-align: left;
+}
+
+.skills th {
+  background-color: #FFCA99;
+  color: #000F06;
+}
+
+/* Video section */
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #0E6B6C;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #FFCA99;
+  color: #000F06;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* Google Maps iframe */
+section iframe[src*="google.com/maps"] {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  border: 2px solid #3e7677;
+  margin-top: 10px;
+}
+
+/* Font fallback selector as required */
+body, h1, h2, h3, p, a, li, td, th, label, input, textarea, button {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+.subtitle {
+    color: #f1f1f1; /*color cambiado por estetica*/
+    text-transform: uppercase;
+}
+
+
+footer p {
+
+    text-align: right;
+
+    font-style: italic;
+
+}
+
+nav > ul {
+
+    list-style: none;
+
+}
+
+section {
+
+    border: 0.2pt solid #cedddd;
+
+    margin: 4px 2px 8px 2px;
+
+    padding: 1.5% 0.8%;
+
+    margin-bottom: 1.2rem;
+
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+
+   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+
+}
