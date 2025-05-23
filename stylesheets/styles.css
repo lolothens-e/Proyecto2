@@ -8,6 +8,66 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle-text {
+  color: #666666;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.navbar li {
+  display: inline-block; 
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.navbar a:hover {
+  background-color: #0E6B6C;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
 body {
   font-family: 'Mulish', 'PT Sans Caption', 'Karma', sans-serif;
   background-color: #F1F1F1;
@@ -36,7 +96,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  color: #0E6B6C;
+  color: #000F06;
   margin-bottom: 5px;
 }
 
@@ -61,6 +121,10 @@ header {
 /* Contact info and links */
 p {
   margin: 10px 0;
+}
+
+th{
+  text-align: center;
 }
 
 a {
@@ -151,6 +215,7 @@ form button {
   border: none;
   border-radius: 6px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -188,6 +253,21 @@ body, h1, h2, h3, p, a, li, td, th, label, input, textarea, button {
     width: 8vw;
     height: auto;
 }
+
+blockquote {
+  font-style: italic;
+  color: #333;
+  margin: 10px 0;
+  padding-left: 20px;
+  border-left: 4px solid #0E6B6C;
+}
+
+.reference-role {
+  color: #888;
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
 
 .subtitle {
     color: #f1f1f1; /*color cambiado por estetica*/
